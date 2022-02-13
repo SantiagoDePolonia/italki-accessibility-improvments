@@ -1,0 +1,12 @@
+{
+  "name": "Italki accessibility improvements",
+  "description": "Makes the booking calendar accessible for screen readers",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.italki.com/*"],
+      "js": ["calendar-helper.js"]
+    }
+  ]
+}
