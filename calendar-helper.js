@@ -29,6 +29,7 @@ document.getElementsByClassName('caldendar-time-cell subhead'),
 for (const calendarCell of document.getElementsByClassName('calendar-cell')) {
 const [dateIndex, hourIndex] = getDateAndHourIndexForCell(calendarCell);
 calendarCell.setAttribute('aria-label', hours[hourIndex] + ' ' + dates[dateIndex]);
+calendarCell.setAttribute('tabindex', 0);
 hideCellIfUnavailable(calendarCell);
 }
 };
