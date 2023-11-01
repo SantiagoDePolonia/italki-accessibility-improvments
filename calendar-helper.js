@@ -1,6 +1,6 @@
 const handleMutations = (mutations) => {
 
-    if (window.location.href.indexOf('https://www.italki.com/booking/date') == -1) {
+    if (window.location.href.indexOf('booking/date') == -1) {
         return;
     }
 
